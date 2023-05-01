@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- TAILWIND CSS CONNECTOR -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <!-- TITLE AND ICON -->
+    <link rel= "icon" type = "Image/png" href = "Images/lg.png">
+    <title>CITY UNIVERSITY OF PASAY</title>
+
+</head>
+    <body> 
+
+      <div class="absolute bg-opacity-0 inset-0">
+        
+        <section>
+          <div class="px-4 py-3 mx-auto sm:max md:max-w-full lg:max-w-screen md:px-24 lg:px-8 bg-[#1E5F0F]">      
+            <div class="relative flex items-center justify-between">
+                <div class="inline-flex items-center">
+                  <img src="Images/nobg logo.png" class="h-[55px] " alt="cup Logo" />
+                  <span class="ml-2 text-[10px] font-serif font-bold tracking-wide text-[#F2FF1B] sm:text-[10px] 
+                  md:text-[15px] lg:text-[20px]">City University Of Pasay</span>
+                </div>
+  
+                <ul class="flex items-center hidden space-x-8 lg:flex">
+                  <li><a href="index.html" aria-label="Our product" title="Our product" 
+                    class="font-medium tracking-wide text-[#F2FF1B] font-serif">Home</a></li>
+                    
+                  <li><a href="About.html" aria-label="Product pricing" title="Product pricing" 
+                    class="font-medium tracking-wide text-[#F2FF1B] font-serif" >Mission & Vision</a></li>
+  
+                  <li><a href="login.html" aria-label="About us" title="About us" 
+                    class="font-medium tracking-wide text-[#F2FF1B] font-serif">Log In/Sign Up</a></li>
+                </ul>
+  
+                <!-- Mobile menu -->
+                <div class="lg:hidden">
+                  <button id="menu-toggle" aria-label="Open Menu" title="Open Menu" class="p-2 -mr-1">
+                    <svg class="w-5 text-[#F2FF1B]" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+                      <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
+                      <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
+                    </svg>
+                  </button>
+  
+                  <!-- Mobile menu dropdown  -->
+                  <div id="mobile-menu" class="absolute top-0 left-0 w-full">
+                    <div class="p-5 bg-white border rounded shadow-sm">
+                      <div class="flex items-center justify-between mb-4">
+                        <div>
+                          <div class="inline-flex items-center">
+                            <img src="Images/nobg logo.png" class="h-[40px] " alt="cup Logo" />
+                            <span class="ml-2 text-[10px] font-serif font-bold tracking-wide text-black-900 sm:text-[10px] 
+                            md:text-[15px] lg:text-[20px]">City University Of Pasay</span>
+                          </div>
+                        </div>
+  
+                        <div> 
+                          <button id="menu-close" aria-label="Close Menu" title="Close Menu" class="p-2 -mt-2 -mr-2 transition 
+                          duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                            <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                              <path fill="currentColor"d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,
+                                1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,
+                                0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
+                              ></path>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+  
+                      <nav >
+                        <ul class="space-y-4">
+                          <li><a href="index.html" aria-label="Home" class="font-medium tracking-wide  
+                            font-serif hover:font-bold">Home</a></li>
+  
+                          <li><a href="About.html" aria-label="Mission & Vision" class="font-medium tracking-wide 
+                            font-serif hover:font-bold">Mission & Vision</a></li>
+  
+                          <li><a href="login.html" aria-label="Log In/Sign Up" class="font-medium tracking-wide 
+                            font-serif hover:font-bold">Log In/Sign Up</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="w-full h-screen bg-[#8ABF14]">
+          <div class="mb-20">  
+            <div class="flex flex-col lg:flex-row">
+                <div class="mx-auto ml-auto"> 
+                  <img class="mt-20 lg:ml-10 items-center hover:scale-105 transition duration-300 
+                  sm:mt-5
+                  md:mt-10
+                  lg:mt-20
+
+                  w-[200px] 
+                  sm:w-[300px] 
+                  md:w-[300px] 
+                  lg:w-[800px]" src="Images/lg.png"  alt="">
+                </div>
+                  
+                <div class="grid gap-5 row-gap-5 d:grid-cols-2 mt-10">
+
+                  <!-- px-10 w-[700px] sm:px-10 md:px-16 lg:px-24 -->
+
+                  <div class="">  
+                    <h1 class=" mb-4 font-serif font-semibold leading-5
+                      px-5
+                      sm:px-10
+                      md:px-16
+                      lg:px-24
+
+                      lg:mt-16
+
+                      text-md 
+                      sm:text-2xl 
+                      md:text-2xl 
+                      lg:text-4xl">MISSION</h1>
+
+                      <p class="font-medium text-justify font-serif leading-loose  
+                      px-5 
+                      sm:px-10
+                      md:px-16
+                      lg:px-24
+
+                      text-[10px]
+                      sm:text-[10px] 
+                      md:text-[12px] 
+                      lg:text-[15px]">
+                          To produce men and women equipped with adequate and relevant knowledge, skills and values that will enable them to practice 
+                          theory professions and to lead quality life in a democratic, just, peaceful and progressive society.
+                      </p>
+                    </div>
+      
+                  <div class=""> 
+                    <h1 class="mb-4 font-serif font-semibold leading-5
+                    px-5
+                    sm:px-10
+                    md:px-16
+                    lg:px-24
+
+                    text-md 
+                    sm:text-2xl 
+                    md:text-2xl 
+                    lg:text-4xl">VISION</h1>
+                    <p class="font-medium text-justify font-serif leading-loose 
+                    px-5 
+                    sm:px-10
+                    md:px-16
+                    lg:px-24
+
+                    text-[10px]
+                    sm:text-[10px] 
+                    md:text-[12px] 
+                    lg:text-[15px]">
+                        City University of Pasay envision as higher learning institution given by competencies, values and technologies, responsive to 
+                        and in the service of local communities and sectors as stakeholders, working together towards excellence and holistic development.
+                    </p>
+                  </div>  
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <div id="Footer">
+          <section>
+            <div class="px-4 pt-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen md:px-24 lg:px-8">
+              <div class="flex flex-col justify-between pt-5 pb-10 border-t sm:flex-row">
+                <p class="text-sm text-gray-600">
+                  © Copyright 2023 City University Of Pasay
+                </p>
+                <div class="flex items-center mt-4 space-x-4 sm:mt-0">
+                  <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                      <path
+                        d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+    
+      </div>
+
+      
+
+      
+
+    <script src="Javascript/index.js"></script>
+
+    </body>
+
+   
+
+</html>
